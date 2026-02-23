@@ -6,7 +6,7 @@
 		/obj/item/knife/hunting/wildhunter,
 		/obj/item/book/granter/crafting_recipe/dusting/summoning_flute/blood_drunk_miner
 	)
-	loot = list(
+	regular_loot = list(
 		/obj/item/melee/cleaving_saw,
 		/obj/item/gun/energy/recharge/kinetic_accelerator,
 		/obj/item/book/granter/crafting_recipe/dusting/summoning_flute/blood_drunk_miner
