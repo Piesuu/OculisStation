@@ -35,6 +35,9 @@
 	if (isnull(client_use_echo))
 		client_use_echo = TRUE
 
+	human_holder.AddComponent(/datum/component/echolocation, blocking_trait = TRAIT_DEAF, echo_range = 5, echo_group = client_echo_group, images_are_static = FALSE, blinding = TRUE, use_echo = client_use_echo, show_own_outline = TRUE)
+	esp = human_holder.GetComponent(/datum/component/echolocation)
+
 	// HEY! we probably need something to make sure they don't set a color that's too dark or their UI could be totally invisible.
 	// GOOD NEWS! we can re-use the runechat colour stuff for this (probably)
 	var/datum/status_effect/grouped/blindness/blindness_status_effect = human_holder.has_status_effect(/datum/status_effect/grouped/blindness)
@@ -101,6 +104,7 @@
 
 /datum/quirk_constant_data/echolocation
 	associated_typepath = /datum/quirk/echolocation
+	customization_options = list(/datum/preference/color/echolocation_outline, /datum/preference/choiced/echolocation_key, /datum/preference/toggle/echolocation_overlay)
 
 // Client preference for echolocation outline colour
 /datum/preference/color/echolocation_outline
