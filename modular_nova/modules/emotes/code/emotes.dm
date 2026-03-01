@@ -66,7 +66,7 @@
 
 /datum/emote/living/yawn
 	message_robot = "synthesizes a yawn."
-	message_AI = "synthesizes a yawns."
+	message_AI = "synthesizes a yawn." // IRIS EDIT CHANGE - Original: There was a typo here. Instead of "synthesizes a yawn" it was "synthesizes a yawns".
 
 /datum/emote/living/sniff/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -805,3 +805,23 @@
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
 	sound = 'modular_nova/modules/emotes/sound/voice/teshtrill.ogg' // Credits to Virgo Station for the files.
+
+/datum/emote/living/gulp
+	key = "gulp"
+	key_third_person = "gulps"
+	message = "gulps nervously."
+	message_mime = "gulps silently!"
+	vary = TRUE
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+
+/datum/emote/living/gulp/get_sound(mob/living/user)
+	return pick(
+		'modular_nova/modules/emotes/sound/voice/gulp1.ogg',
+		'modular_nova/modules/emotes/sound/voice/gulp2.ogg',
+	)
+
+/datum/emote/living/carbon/wink
+	sound = 'modular_nova/modules/emotes/sound/voice/wink.ogg'
+
+/datum/emote/living/carbon/human/blink
+	sound = 'modular_nova/modules/emotes/sound/voice/blink.ogg'

@@ -15,8 +15,8 @@
 	#ifdef ALL_MAPS
 		#include "map_files\debug\multiz.dmm"
 		#include "map_files\debug\runtimestation.dmm"
-		#include "map_files\Deltastation\DeltaStation2.dmm"
-		#include "map_files\IceBoxStation\IceBoxStation.dmm"
+		// #include "map_files\Deltastation\DeltaStation2.dmm"
+		// #include "map_files\IceBoxStation\IceBoxStation.dmm"
 		#include "map_files\MetaStation\MetaStation.dmm"
 		#include "map_files\Mining\Lavaland.dmm"
 		#include "map_files\tramstation\tramstation.dmm"
@@ -32,10 +32,19 @@
 		// NOVA EDIT ADDITION END
 		// IRIS EDIT START
 		#include "map_files\KiloStation\KiloStation.dmm"
-		#include "map_files\Oshan\Oshan.dmm"
 		// IRIS EDIT END
 	#endif
 	#ifdef ALL_TEMPLATES
 		#include "templates.dm"
 	#endif
+	// NOVA EDIT ADDITION START
+	#ifdef NOVA_TEMPLATES
+		#include "templates_nova.dm"
+	#endif
+	// NOVA EDIT ADDITION END
+	// IRIS EDIT ADDITION START
+	#ifdef IRIS_TEMPLATES
+		#include "templates_iris.dm"
+	#endif
+	// IRIS EDIT ADDITION END
 #endif
