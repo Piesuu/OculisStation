@@ -144,3 +144,18 @@
 2026-04-13:
   XeonMations:
   - bugfix: Fixed emote cooldown being 2 seconds. Lowered to 0.8, same as TG.
+2026-04-15:
+  KnigTheThrasher:
+  - map: black mesa away mission
+  - map: fixed apc's in pubby
+  KnigTheThrasher,  Fikou, adamsong:
+  - rscadd: lizard stomachs have faster metabolism, faster transferring stuff to the
+      liver
+  - rscadd: lizard have a secondary heart, they can survive with just having one
+  - rscadd: lizards naturally regenerate brute damage when well fed, unless they become
+      fatasses
+  - rscadd: lizards have a lower threshold to purge toxins, so they are more effective
+      on them
+  - rscadd: lizards take more damage from toxin and have slower surgery times due
+      to their scales
+  - rscadd: Added the ability for lizards to lick things off their own face
